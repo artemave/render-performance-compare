@@ -1,0 +1,18 @@
+{
+  "name": "compare-perf",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "browser-monkey": "^2.9.0",
+    "electron": "^5.0.6",
+    "electron-mocha": "^8.0.3",
+    "hyperdom": "^2.0.0",
+    "mithril": "^1.1.6",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "scripts": {
+    "test": "for t in $(ls test/*Spec.js | sort -R); do electron-mocha --color --renderer --full-trace $t; done"
+  }
+}
