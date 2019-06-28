@@ -1,4 +1,4 @@
-# Compare multiple render performance
+# Compare multiple DOM updates performance
 
 The test types in 4000 characters into an input. Input value is bound onto a div. The test is complete once all 4000 characters show up in that div.
 
