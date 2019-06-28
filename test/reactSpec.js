@@ -3,11 +3,7 @@ const createTestDiv = require('browser-monkey/lib/createTestDiv')
 const ReactDOM = require('react-dom')
 const React = require('react')
 const App = require('../reactApp')
-
-function veryLongInput() {
-  const veryLongInput = "Carry on my sons forever Carry On when I am gone Carry On when the day is long Forever Carry On For as long as we're together Then forever Carry On"
-  return [...Array(20)].map(_ => veryLongInput).join(',')
-}
+const veryLongInput = require('./veryLongInput')
 
 describe('react perf', () => {
   let page
